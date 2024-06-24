@@ -1,0 +1,146 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 24px 155px; */
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 31px;
+    margin-right: 68px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00FFD0;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.authButton {
+    background: linear-gradient(180deg, #f5f5f5, #d1f8f7);
+    border: none;
+    border-radius: 8px;
+    padding: 11px 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000433;
+}
+
+.user {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+.authButton:hover {
+    background: linear-gradient(180deg, #ffffff, #a8faf7);
+}
+
+.line {
+    width: 1px;
+    height: 12px;
+    background-color: #000433;
+    margin: 0 10px;
+}
+
+.verticalLine {
+    width: 1px;
+    height: 24px;
+    background-color: #000433;
+    margin: 0 24px;
+}
+
+.languageSelect {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.headerSelect {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000433;
+    cursor: pointer;
+}
+
+.burgerButton {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burgerButton img {
+    height: 31px;
+}
+
+.chevron{
+    margin-left: 8px;
+}
+
+
+
+@media (max-width: 600px) {
+    .header {
+        padding: 0 24px 28px;
+        margin-bottom: 56px;
+        justify-content: flex-start;
+        border-bottom: 1px solid rgba(217, 217, 217, 0.5);
+    }
+
+    .logo{
+        height: 39px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .headerRight {
+        display: none;
+    }
+
+    .burgerButton {
+        display: block;
+        margin-right: 87px;
+    }
+}

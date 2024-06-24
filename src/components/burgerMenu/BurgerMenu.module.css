@@ -1,0 +1,103 @@
+.burgerMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 4, 51, 0.6);
+    backdrop-filter: blur(3px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 42px;
+    justify-content: flex-start;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+}
+
+.burgerMenu.open {
+    transform: translateX(0);
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 110px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.link {
+    margin-bottom: 24px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.authButton {
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    background: rgb(128,104,102);
+    border: none;
+    border-radius: 8px;
+    padding: 14px 73px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.authButton img {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+.authButton:hover {
+    background: linear-gradient(180deg, #ffffff, #a8faf7);
+}
+
+.line {
+    width: 1px;
+    height: 12px;
+    background-color: #000433;
+    margin: 0 10px;
+}
+
+.languageSelect {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.headerSelect {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000433;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .burgerMenu {
+        display: flex;
+    }
+
+    .headerSelect{
+        color: #fff;
+    }
+}

@@ -1,0 +1,87 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 4, 51, 0.6);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    padding: 55px 32px 42px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+}
+
+.modalPerson{
+    position: absolute;
+    top: -30px;
+    left: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+    border: 1px solid #D9DBE1;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.modalPerson img {
+    height: 32px;
+}
+
+.modalHeader{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.footerDescription {
+    margin-right: 12px;
+    font-size: 14px;
+    color: #969BAB;
+}
+
+.modalHeader {
+    margin-bottom: 32px;
+}
+
+.modalTitle{
+    font-size: 28px;
+    color: #000433;
+    font-weight: bold;
+}
+
+.modalDescription{
+    font-weight: 14;
+    color: #000433;
+}
+
+.modalFooter{
+    text-align: center;
+}
+
+.modalSwitchBtn {
+    border: none;
+    outline: none;
+    color: #8C30F5;
+    background: none;
+    cursor: pointer;
+}
